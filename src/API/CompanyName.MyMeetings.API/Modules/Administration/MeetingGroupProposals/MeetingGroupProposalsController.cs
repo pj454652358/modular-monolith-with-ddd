@@ -40,7 +40,8 @@ namespace CompanyName.MyMeetings.API.Modules.Administration.MeetingGroupProposal
         {
             await _administrationModule.ExecuteCommandAsync(
                 new AcceptMeetingGroupProposalCommand(meetingGroupProposalId));
-
+            string str=string.Empty;
+            
             return Ok();
         }
     }
